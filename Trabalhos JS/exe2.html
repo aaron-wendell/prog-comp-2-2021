@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- avisa o navegador que a lingua é portugues -->
+<head>
+    <meta charset="utf-8"/> <!-- lingua tem acento, sedilha -->
+    <title> Exercicio 2 da lista </title>
+    <script type="text/javascript" src="js/exe2.js"> </script>
+    <link rel="stylesheet" href="css/exe.css"/>
+</head>
+<body>
+    <div id="formulario">
+        <h2> Exercício 2 da lista </h2>
+        <div class="campos">
+            <label for="numero1"> Numero 1 </label>
+            <input type="number" id="numero1"/> <!-- vamos usar numero 1 no js (entrada de dados) -->
+        </div>
+        <div class="campos">
+            <label for="numero2"> Numero 2 </label> <!-- vamos usar numero 2 no js (entrada de dados) -->
+            <input type="number" id="numero2"/>
+        </div>
+        <div class="campos">
+            <label for="numero3"> Numero 3 </label> <!-- vamos usar numero 3 no js (entrada de dados) -->
+            <input type="number" id="numero3"/>
+        </div>
+        <div class="campos">
+            <!-- onclick é chamado quando um evento de clique ocorre no local -->
+            <!-- chama a função mp. Toda funçao deve ser chamada com nome_funcao() -->
+            <!-- sintaxe de uma linguagem de programaçao -->
+            <button type="button" onclick="mult()"> Calcula a multiplicação </button>
+        </div>
+        <div>
+            <!-- vamos usar resultado no js (saida de dados) -->
+            <h3 id="resultado"> </h3>
+        </div>
+    </div>
+</body>
+</html>

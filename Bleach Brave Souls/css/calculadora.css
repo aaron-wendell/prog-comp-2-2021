@@ -1,0 +1,19 @@
+#poder{
+    outline: firebrick 6px groove;
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 550px;
+    margin: 60px auto;
+}
+#divAtaque, #divDefesa, #divAtaque2, #divDefesa2, #botao{
+    margin: 20px;
+}
+h2 {
+    color:grey; 
+}
+body {
+background-image: url("./img/pvp.jfif");
+background-position-y: 320px;
+background-position-x: 20px;
+background-attachment: scroll;
+}

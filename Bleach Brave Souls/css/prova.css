@@ -1,0 +1,15 @@
+#formulario{
+    border-radius: 12px;
+    margin: 20px auto;
+    background-color: burlywood;
+    width: 400px;
+}
+.campos{
+    padding: 15px;
+}
+h2{
+    color: darkturquoise;
+}
+h3{
+    color: greenyellow;
+}

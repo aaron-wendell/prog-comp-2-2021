@@ -1,0 +1,12 @@
+#divpeso, #altura, #botao, #divPedagio1, #divPedagio2, #divCombustivel, #botao{
+    margin: 15px;
+}
+h2 {
+    color:black 
+}
+body {
+background-image: url("./img/car travel.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: scroll;
+}

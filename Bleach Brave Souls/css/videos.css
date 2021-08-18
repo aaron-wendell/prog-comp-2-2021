@@ -1,0 +1,21 @@
+body {
+    background-image: url("./img/ulquiorra 3.jfif");
+    background-position-y: 70px;
+    background-position-x: 100px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    }
+    div.video{
+     margin: 3px;
+     border: 1px solid #ccc;
+     float: left;
+     width: 499px;
+     background-color: whitesmoke;
+    }
+    div.video:hover {
+     border: 1px solid #777;
+}
+    div.descricao{
+     padding: 5px;
+     text-align: center;
+    }

@@ -1,0 +1,40 @@
+#menu ul{
+    padding: 10px; /* espacamento interno de 0px */
+    width: 1200px; /* largura da lista do menu */
+    margin: 10px; /* espacamento externo de 0px */
+    background-color: greenyellow; /* cor de fundo da lista */
+    list-style: none /* lista nao tera bolinhas "os itens" */
+}
+/* regra se aplica aos itens da lista do menu*/
+#menu ul li {
+    display: inline; /* os itens da lista ficarao numa unica linha */
+    padding: 30px; /* espacamento interno entre os itens */
+}
+/* regra se aplica ao link dos itens da lista do menu */
+#menu ul li a{
+    padding: 2px 10px;
+    background-color: white; /* cor de fundo */
+    color:black; /* cor do texto */
+    text-decoration: none; /* sem sublinhado */
+    border-bottom: gray 3px solid; /* borda embaixo do item do menu com sistema de cores*/
+}
+.menu-suspenso{
+    position: relative; /* conteudo atual acompanha o conteudo da pagina */
+    display: inline-block; /* mostra conteudo em uma unica linha */
+}
+.conteudo-menu-suspenso{
+    display: none;
+    position: absolute; /* conteudo atual nao acompanha conteudo da pagina */
+    background-color: cyan;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,2);
+}
+.menususpenso:hover .conteudo-menu-suspenso{ /* quando passar o mouse*/
+    display: block; /* coloca pra mostrar */
+}
+.conteudo-menu-suspenso a{
+    display: block; /* faz aparecer cada link em uma unica linha */
+    padding: 6px; /* espaçamento */
+    text-decoration: none ; /* link não para*/
+
+}

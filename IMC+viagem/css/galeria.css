@@ -1,0 +1,39 @@
+.galeria{
+    margin: 5px; /* espaçamento externo de 5px */
+    border: 1px solid #fff; /* borda solida com cor */
+    float: left; /* flutuação ou alinhamento a esquerda */
+    width: 180px; /* largura de 180 px */
+}
+img {
+  width: 100%; /* cobre em 100% da largura da div da galeria */
+  height: auto; /* altura da imagem é a altura dela padrão 400px */
+}
+#conteudo{
+  width: 800px; /* largura da area que engloba as galerias */
+  margin: 60 px auto; /* centralizando da area e espaçamento externo de 60px */
+}
+.descricao {
+  padding: 15px; /* espaçamento interno */
+  text-align: center; /* alinhamento do texto */
+}
+
+div.galeria {
+ margin: 5px;
+ border: 1px solid #ccc;
+ float: left;
+ width: 180px;
+}
+
+div.galeria:hover {
+ border: 1px solid #777;
+}
+
+div.galeria img {
+ width: 100%;
+ height: auto;
+}
+
+div.descricao {
+ padding: 15px;
+ text-align: center;
+}
