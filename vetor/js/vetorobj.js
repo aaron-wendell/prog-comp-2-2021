@@ -103,8 +103,9 @@ let gerenciaredessociais = () => {
     //ex4 o programa retorna quantos posts foram feitos por cada usuario
     
     let vetorusuariospost = []
-        for(let i=0; i<5; i++)
+        for(let i=0; i<3; i++)
         {   
+            let achou = false
             for(let j=0; j<vetorusuariospost.length; j++)
             {
                 if(vetorusuarios[i].login == vetorusuariospost[i].login)
@@ -124,10 +125,5 @@ let gerenciaredessociais = () => {
             })
         }
         console.log(vetorusuariospost)
-        for(i=0; i<5; i++)
-        {
-            console.log(`A quantidade de posts de ${vetorusuarios[i].nome} é ${post}`)
-        vetorusuarios.push(objeto.nome)
-        vetorusuarios.push(objeto.qtdeposts)
-        }
+        
 }
