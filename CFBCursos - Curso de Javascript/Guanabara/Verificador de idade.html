@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="css/estiloazul.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div id="msg">
+            <p>
+            Ano de nascimento: 
+            <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>
+            Sexo<br>
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="masc"> Masculino </label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem"> Feminino </label>
+            </p>
+            <p>
+            Raça<br>
+            <input type="radio" name="radraca" id="branco" checked>
+            <label for="branco"> Branco </label>
+            <input type="radio" name="radraca" id="pardo">
+            <label for="pardo"> Pardo </label>
+            <input type="radio" name="radraca" id="preto">
+            <label for="preto"> Preto </label>
+            <input type="radio" name="radraca" id="asia">
+            <label for="asia"> Asiático </label>
+            <input type="radio" name="radraca" id="indio">
+            <label for="indio"> Índio </label>
+            <br>
+            <input type="radio" name="radraca" id="arabe">
+            <label for="arabe"> Árabe </label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Curso em video
+
+        </p>
+    </footer>
+    <script src="idade.js"> </script>
+</body>
+</html>

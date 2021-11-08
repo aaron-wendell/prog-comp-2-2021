@@ -1,0 +1,7 @@
+#formulario { 
+    outline:blueviolet 6px solid; /* borda externa blueviolet de 2px de expessura */
+    background-color: white;
+    padding: 30px; /* espaçamento interno de 30 pixels (bolinha) */
+    width: 550px; /* largura do formulário */
+    margin: 40px auto; /* espaçamento externo de 40 pixels centralizado */
+}

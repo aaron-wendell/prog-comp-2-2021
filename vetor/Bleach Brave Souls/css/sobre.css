@@ -1,0 +1,16 @@
+#caixa { 
+    background-color: mediumspringgreen;   
+    width: 300px; /* largura da caixa */
+    border: 20px solid darkslateblue; /* borda da caixa */
+    padding: 30px; /* espacamento interno da caixa de 50 px na esquerda */
+    margin: 20px auto; /* espacamento externo da caixa */
+     }
+h2 {
+    color:aqua 
+}
+body {
+background-image: url("./img/5aniversario.jfif");
+background-position-y: 231px;
+background-position-x: 230px;
+background-repeat: repeat-x;
+}

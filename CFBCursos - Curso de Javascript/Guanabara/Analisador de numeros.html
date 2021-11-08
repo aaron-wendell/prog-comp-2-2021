@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analise de numeros</title>
+    <link href="css/estiloazul.css" rel="stylesheet">
+</head>
+<header> 
+    <h1>
+        Analise de numeros 
+    </h1>
+</header>
+<body>
+    <script src="js/analise.js"> </script>
+    <section>
+        <div>
+            Digite um numero (entre 1 e 100)
+            <p><input type="number" name="num" id="numero">
+            <p><input type="button" value="Adicionar" onclick="adicionar()">
+            <br><br><select name="analise" id="analise" size="5"></select>
+            <br><p><input type="button" value="Finalizar" onclick="finalizar()"> </p>
+        </div>
+        <div id="res">
+        </div>
+    </section>
+    
+    <footer>
+        <p>
+            &copy;Aaron
+        </p>
+    </footer>
+</body>
+</html>

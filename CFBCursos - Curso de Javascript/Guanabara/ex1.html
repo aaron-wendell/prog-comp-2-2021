@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+    <link rel="stylesheet" href="css/estiloazul.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Exercicio 1</h1>
+    </header>
+    <section>
+        <div id="msg">
+            Procure por alguma coisa...
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; Curso em video
+
+        </p>
+    </footer>
+    <script>
+        var n1 = Number.parseInt(prompt('Digite um numero inteiro')) //Number.parseInt
+        var n2 = Number.parseFloat(prompt('Digite um numero real')) // Number.parseFloat = numero real
+        var n3 = Number(prompt('Digite um numero')) //qualquer tipo de numero seja real ou inteiro
+        var s = n1+n2+n3
+        alert('A soma dos valores eh '+ s)
+
+        var nome = prompt('Digite seu nome')
+        document.write(`Ola <strong>${nome}</strong>, seu nome tem ${nome.length} letras! `)
+        document.writeln(`<br>Seu nome em maiusculas eh ${nome.toUpperCase()}<br> Seu nome em minusculas eh ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>

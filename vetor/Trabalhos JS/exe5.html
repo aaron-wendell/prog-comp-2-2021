@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- avisa o navegador que a lingua é portugues -->
+<head>
+    <meta charset="utf-8"/> <!-- lingua tem acento, sedilha -->
+    <title> Exercicio 5 da lista </title>
+    <script type="text/javascript" src="js/exe5.js"> </script>
+    <link rel="stylesheet" href="css/exe.css"/>
+</head>
+<body>
+    <div id="formulario">
+        <h2> Exercício 5 da lista </h2>
+        <div class="campos">
+            <label for="preço"> Preço </label>
+            <input type="number" id="preço"/> <!-- vamos usar nota 1 no js (entrada de dados) -->
+        </div>
+        <div class="campos">
+            <!-- onclick é chamado quando um evento de clique ocorre no local -->
+            <!-- chama a função mp. Toda funçao deve ser chamada com nome_funcao() -->
+            <!-- sintaxe de uma linguagem de programaçao -->
+            <button type="button" onclick="desconto()"> Calcula o preço com desconto </button>
+        </div>
+        <div>
+            <!-- vamos usar resultado no js (saida de dados) -->
+            <h3 id="resultado"> </h3>
+        </div>
+    </div>
+</body>
+</html>

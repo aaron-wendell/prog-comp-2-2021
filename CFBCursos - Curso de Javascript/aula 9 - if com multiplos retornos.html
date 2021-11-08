@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> Aula 9 - IF com multiplos Retornos</title>
+        <meta charset="utf-8">
+        <script> 
+        // Aprovado -> =>60%
+        var nota = 100
+
+        if(nota>=95){
+            res = "Aprovado com louvor!"
+        }
+
+        else if(nota>=60){
+            res = "Aprovado!";
+        }
+
+        else if((nota>=40) && (nota<60))
+        {
+            res = "Recuperação";
+        }
+        else if(nota<=20){
+            res = "Reprovado com louvor!"
+        }
+        else{
+            res = "Reprovado!";
+        }
+        document.write(res)
+        </script>
+    </head>
+</html>

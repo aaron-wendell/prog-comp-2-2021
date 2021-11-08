@@ -1,0 +1,46 @@
+<!Doctype html>
+<html lang="pt-br">
+<head>
+    <title> Aula 12 - Switch Case </title>
+    <meta charset="utf-8">
+    <script> 
+        var pos, msg, pts;
+
+        pts = 400
+
+        if(pts>1000){
+            pos = 1
+        }
+        else if(pts >= 800)
+        {
+            pos = 2
+        }
+        else if(pts >= 600){
+            pos = 3
+        }
+        else{
+            pos = 0
+        }
+        
+        switch(pos){
+            case 1: msg = "Primeiro lugar<br>Medalha de ouro";
+            break
+            case 2: msg = "Segundo lugar<br>Medalha de prata";
+            break
+            case 3: msg = "Terceiro lugar<br>Medalha de bronze";
+            break
+            default: msg="Nao foi ao podio <br> Ficaste sem medalha";
+        }
+
+        switch(pos){
+            case 1: 
+            case 2: 
+            case 3:
+                msg+="<br>Subiu ao podio" 
+            default: msg+= "<br>Nao teve colocacao"
+        }
+
+        document.write(msg)
+    </script>
+</head>
+</html>

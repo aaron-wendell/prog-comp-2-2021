@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <div id="area" onclick="clic()" onmouseenter="entra()" onmouseleave="sai()"> Interaja com o Bloco </div>
+</head>
+<style> body{
+    background-color: blueviolet;
+    color: white;
+    font: normal 18pt Arial;
+}
+div#area {
+    font: normal 16pt Arial;
+    background: rgb(6, 233, 6);
+    color: whitesmoke;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: start;
+}
+
+</style>
+<body>
+    <h1> Iniciando estudos de DOM </h1>
+    <p> Aqui vai o resultado</p>
+    <p> Aprendendo a usar o <stong>DOM</stong> em JS</p>
+    <div id="click">Clique aqui</div>
+    <script> 
+    var p1 = document.getElementsByTagName('p')[1]
+    var corpo = document.body
+    document.write('Aqui esta escrito: ' +p1.innerText)
+    document.write(p1.innerHTML)
+    var d = document.querySelector('div#click')
+    d.style.background = 'blue'
+    d.innerText = 'estou aguardando'
+    function clic(){
+        var a = window.document.getElementById('area')
+        a.innerText = 'Clicou!'
+        a.style.background = 'red'
+    }
+    function entra(){
+        var a = window.document.getElementById('area')
+        a.innerText = 'Entrou!'
+        a.style.textAlign = 'center'
+    }
+    function sai(){
+        var a = document.getElementById('area')
+        a.innerText = 'Saiu!'
+        a.style.textAlign = 'center'
+    }
+    </script>
+</body>
+</html>

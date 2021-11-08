@@ -1,0 +1,13 @@
+body {
+    background-image: url("./img/bleach home.jfif");
+    background-position-y: 90px;  /* altura da imagem */
+    background-position-x: 100px; /* largura da imagem */
+    background-repeat: space;
+    }
+#caixa { 
+        background-color: navajowhite;   
+        width: 300px; /* largura da caixa */
+        border: 20px solid darkorange; /* borda verde da caixa */
+        padding: 30px; /* espacamento interno da caixa de 50 px na esquerda */
+        margin: 20px auto; /* espacamento externo da caixa */
+         }

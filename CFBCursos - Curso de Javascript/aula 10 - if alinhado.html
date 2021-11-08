@@ -1,0 +1,32 @@
+<!Doctype html>
+<html lang="pt-br">
+<head>
+    <title> Aula 10 - IF Alinhado </title>
+    <meta charset="utf-8">
+    <script> 
+        // Aprovado -> =>60%
+        var nota = 70
+
+        if(nota>=60){
+            res = "Aprovado ";
+                if(nota>=95){
+                res+= "com louvor!"
+                }
+        }
+         
+        else{
+            res = "Reprovado"
+            if (nota>=40)
+            {
+                res = "Recuperação"
+            }
+            else{
+            res+= " com louvor!"
+            }
+        }
+            
+        document.write(res)
+
+    </script>
+</head>
+</html>

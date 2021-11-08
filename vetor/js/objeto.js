@@ -56,19 +56,19 @@ let objeto = () =>{
         vetor.push(objeto)
     }
     
-    //tipo B
+    /* tipo B
     //  for(let i=0; i<4; i++){
     //cria objeto
     // let objeto = 
       //  objeto.nome = prompt(`Informe o nome do produto`)
        // objeto.qtde = Number(prompt(`Informe a qtde do produto`))
        // objeto.preco = Number(prompt(`Informe o preco do produto`))
-    // }
+     } 
 
     //adiciona objeto no vetor
-    //vetor.push(objeto)
+    vetor.push(objeto)
     // calcula a media de preco de produtos
-
+     */
     
         let soma = 0
     

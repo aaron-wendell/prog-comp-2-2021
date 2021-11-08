@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- avisa o navegador que a lingua é portugues -->
+<head>
+    <meta charset="utf-8"/> <!-- lingua tem acento, sedilha -->
+    <title> Exercicio 6 da lista </title>
+    <script type="text/javascript" src="js/exe6.js"> </script>
+    <link rel="stylesheet" href="css/exe.css"/>
+</head>
+<body>
+    <div id="formulario">
+        <h2> Exercício 6 da lista </h2>
+        <div class="campos">
+            <label for="salario"> Salario Fixo </label>
+            <input type="number" id="salario"/> <!-- vamos usar salario fixo no js (entrada de dados) -->
+        </div>
+        <div class="campos">
+            <label for="vendas"> Valor das vendas </label> <!-- vamos usar vendas no js (entrada de dados) -->
+            <input type="number" id="vendas"/>
+        </div>
+        <div class="campos">
+            <!-- onclick é chamado quando um evento de clique ocorre no local -->
+            <!-- chama a função mp. Toda funçao deve ser chamada com nome_funcao() -->
+            <!-- sintaxe de uma linguagem de programaçao -->
+            <button type="button" onclick="sal()"> Calcula o salário total </button>
+        </div>
+        <div>
+            <!-- vamos usar resultado no js (saida de dados) -->
+            <h3 id="resultado"> </h3>
+        </div>
+        <div class="campos">
+            <button type="button" onclick="com()"> Calcula comissão sobre a venda </button>
+            </div>
+         <div>   <h3 id="comissao"> </h3>
+         </div>
+    </div>
+</body>
+</html>

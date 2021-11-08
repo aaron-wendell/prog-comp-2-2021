@@ -1,0 +1,5 @@
+for(i=0; i<6; i++){console.log('Tudo bem?')}
+c = 1
+while(c<6){
+    console.log('Teu nome eh Juca')
+}
