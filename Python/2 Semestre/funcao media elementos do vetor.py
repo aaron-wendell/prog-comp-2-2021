@@ -8,4 +8,4 @@ vet = []
 for i in range(5):
     vet.append(int(input('Numero: ')))
 
-print(media(vet))
+print('A média é', media(vet))
