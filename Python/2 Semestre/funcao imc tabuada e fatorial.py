@@ -22,7 +22,7 @@ while escolha != -1:
     if escolha == 2:
         peso = float(input('Peso: '))
         altura = float(input('Altura: '))
-        print(f'IMC = {:.2f}', (imc(peso, altura)))
+        print(f'IMC = {imc(peso, altura):.2f}')
     if escolha == 3:
         fatorial = int(input('Digite o numero o qual desejas saber o fatorial: '))
         

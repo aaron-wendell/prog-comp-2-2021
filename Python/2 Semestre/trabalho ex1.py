@@ -4,27 +4,35 @@ def valorp(vet, prestacao, atraso):
     if atraso == 0 and prestacao > 0:
         valor = prestacao
         vet.append(valor)
+        print(f"Valor da prestação= R${valor:.2f}")
     elif atraso > 0 and prestacao > 0:
-        valor = (prestacao*1.03) + (atraso*0.001)
-        print(f"Valor da prestação= {valor:.2f}")
+        valor = (prestacao*1.03) + (atraso*0.001) # 3% de multa do valor da prestação + 0,1% de atraso
+        print(f"Valor da prestação= R${valor:.2f}")
         vet.append(valor)
     elif prestacao == 0:
-        for i in range(len(vet)):
-            print(f'Prestacao {i+1}: {vet[i]}')
-            soma += vet[i]
         print('Transações concluídas')
         print('Numero de prestações:', len(vet))
-        print('Valor total das prestações pagas:', soma)
+        for i in range(len(vet)):
+            print(f'Prestacao {i+1}: R${vet[i]}')
+            soma += vet[i]
+        print('Valor total das prestações pagas: R${:.2f}'.format(soma))
     
 vet = []
-vet2 = []
 
-prestacao = float(input('Digite o valor da prestacao: '))
+prestacao = float(input('Digite o valor da primeira prestacao: '))
+i = 1
+while prestacao <= 0:
+        prestacao = float(input('Valor invalido. Digite o valor da primeira prestacao: '))
 while prestacao != 0:
+    while prestacao < 0:
+        prestacao = float(input('Valor invalido. Digite o valor da prestacao: '))
+    if prestacao == 0:
+        break    
     atraso = int(input('Digite os dias em atraso: '))
-    valorp(vet, prestacao, atraso)
     while atraso < 0:
         atraso = int(input('Valor invalido. Digite os dias em atraso: '))
-    prestacao = float(input('Digite o valor da prestacao: '))
+    valorp(vet, prestacao, atraso)
+    i += 1
+    prestacao = float(input(f'Digite o valor da {i}ª prestacao: '))
 
 valorp(vet, prestacao, atraso)
