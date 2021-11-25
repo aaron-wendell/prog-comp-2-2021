@@ -24,15 +24,13 @@ i = 1
 while prestacao <= 0:
         prestacao = float(input('Valor invalido. Digite o valor da primeira prestacao: '))
 while prestacao != 0:
-    while prestacao < 0:
-        prestacao = float(input('Valor invalido. Digite o valor da prestacao: '))
-    if prestacao == 0:
-        break    
     atraso = int(input('Digite os dias em atraso: '))
     while atraso < 0:
         atraso = int(input('Valor invalido. Digite os dias em atraso: '))
     valorp(vet, prestacao, atraso)
     i += 1
     prestacao = float(input(f'Digite o valor da {i}ª prestacao: '))
+    while prestacao < 0:
+        prestacao = float(input('Valor invalido. Digite o valor da prestacao: '))
 
 valorp(vet, prestacao, atraso)
