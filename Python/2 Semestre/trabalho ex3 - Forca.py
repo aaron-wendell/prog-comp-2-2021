@@ -1,8 +1,17 @@
+# Aaron Wendell 23736 Engenharia de Software
 print('Jogo da Forca')
-palavra = input('Digite a palavra: ')
 tentativas = 5
-alfabeto = list('abdcefghijklmnopqrstuvwxyz')
+alfabeto = list('abdcefghijklmnopqrstuvwxyzçáãéóõê')
+palavra = input('Digite a palavra: ').lower()
+
+while palavra.isnumeric() or palavra.isspace() or palavra == '':
+    palavra = input('Há caracter(es) invalido(s) na palavra. Digite a palavra: ')
+
 vetor = []
+
+for i in range(10):
+    print()
+
 while True:
     for letra in palavra:
         if letra in vetor:
@@ -24,7 +33,7 @@ while True:
         tentativas -= 1
         print('\nLetra não existe na palavra. Tentativas restantes:', tentativas)
     if tentativas == 0:
-        print('\nQue pena! Voce perdeu o jogo da forca!')
+        print('\nQue pena! Voce perdeu o jogo da forca! A resposta correta era: '+ palavra)
         break
     
     vetor.append(letra)

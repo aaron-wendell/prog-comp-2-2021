@@ -1,3 +1,4 @@
+# Aaron Wendell 23736 Engenharia de Software
 def valorp(vet, prestacao, atraso):
     soma = 0
     if atraso == 0 and prestacao > 0:

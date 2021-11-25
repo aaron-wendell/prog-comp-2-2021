@@ -36,6 +36,32 @@ let totaltrimestre = (matriz) =>{
     }
 }
 
+let carromasvende = (vetor, matriz) => {
+    let maior = 0
+    let soma
+    for(let i=0; i<vetor.length; i++){ //cada carro
+      soma = 0
+      for (let j=0; j<4; j++){ //cada trimestre
+          soma = soma + matriz[i][j]
+      }
+      if(soma>maior){
+        maior = soma
+      }
+    }
+    for(let i=0; i<vetor.length; i++){
+        if(maior == soma){
+            alert(`O carro mais vendido foi o ${vetor[i].marca} ${vetor[i].modelo} ${vetor[i].ano}, vendendo um total de R$${maior}`)
+        } 
+    }
+}
+
+function trimestremasvende(vetor, matriz){
+    let soma = 0
+    for (let j=0; j<4; j++){ //cada trimestre
+        soma = soma + matriz[i][j]
+    }
+}
+
 let opcao
 let vetor = []
 let matriz = []
@@ -51,10 +77,11 @@ do{
             break
         case 4: totaltrimestre(matriz)
             break
+        case 5: carromasvende(vetor, matriz)
+            break
+        case 6: trimestremasvende(vetor, matriz)
+            break
         case 7: alert('O programa sera encerrado')
-        if(cancel){
-            opcao = 3
-        }
             break
         default: alert(`Opcao invalida`)
     }
